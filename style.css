@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(132, 133, 132);
+    color: aliceblue;
+    
+}
+.container{
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.darkmode{
+    background-color: black;
+    color: white;
+}
+.btn, .theMessageButton {
+    width:auto;
+    color: rgb(248, 246, 246);
+    background-color: black;
+}
+.btn:hover{
+    width:auto;
+    color: rgb(248, 246, 246);
+    background-color: black;
+}
+.theInputValue{
+    width: 20%;
+}
+ul{
+    list-style: none;
+}

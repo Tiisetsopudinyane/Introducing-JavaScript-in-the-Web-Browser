@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    </head>
+    <body>
+        <div class="container">
+                <div class="myMessage" >
+                </div>
+                <div>
+                    <button class="btn showMessage">Show Message</button>
+                </div>
+                <div>
+                    <button class="clear mt-4 btn">Clear</button>
+                </div>
+                <input type="text" class="theInputValue mt-4">
+                <ul class="fruits">
+                </ul>
+                <br>
+                <h1>Message Widget</h1>
+                <div x-data="{message:"",enteredMessage=""}">
+                    <div x-text="message"></div>
+                    <button class="btn theMessageButton" x-on:click="message=enteredMessage">Show Message</button>
+                </div>
+        </div>
+    </body>
+</html>
